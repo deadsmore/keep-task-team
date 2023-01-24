@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: #333;
+}
+
+header{
+    border-bottom: 1px solid black;
+    padding: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-input{
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    color: black;
+    width: 400px;
+}
+
+
+#add-note-container{
+    display: flex;
+    width: 1000px;
+    margin: 1rem auto 0;
+    gap: 1rem;
+
+}
+
+#add-note-container input,
+#add-note-container button {
+    padding: 10px;
+    border-radius: 5px;
+}
+#add-note-container input{
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid #525356;
+}
+#add-note-container button{
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+
+}
+#selectFont{
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid #525356;
+    color:grey;
+}
+#time{
+    color: grey;
+}
+#notes-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    padding: 2rem;
+    gap: 2rem;
+}
+.note{
+    min-height: 200px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    background-color: #202124;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+.note textarea{
+    background-color: transparent;
+    resize: none;
+    color: #fff;
+    height: 100%;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+.delete{
+    position: absolute;
+    background-color: transparent;
+    font-size: 0.9rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    left: 230px;
+}
+#clock{
+    color: grey;
+}
+

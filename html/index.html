@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Нотатки</title>
+    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+    <style>
+
+    </style>
+<body>
+
+
+<div id="add-note-container">
+    <label id="clock"> До якого часу 🕑</label>
+    <input type="datetime-local" id="time"  style="width: 50px">
+    <input type="text" id="note-content" placeholder="Нова нотатка">
+    <button class="add-note">+</button>
+    <select id="selectFont" >
+        <option>Arial</option>
+        <option>Comic Sans MS</option>
+        <option>Georgia</option>
+    </select>
+</div>
+<div id="notes-container">
+    <div class="note" style="display: none">
+        <textarea placeholder="Пустая нотатка"></textarea>
+        <button id="delete" class="delete">Х</button>
+    </div>
+</div>
+
+
+</body>
+</html>
